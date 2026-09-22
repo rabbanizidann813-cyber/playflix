@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayFlix</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { background-color: #141414; color: #ffffff; padding-bottom: 40px; }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      background-color: #000000;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo { color: #e50914; font-size: 22px; font-weight: bold; letter-spacing: 1px; }
+    .btn-login { background: #e50914; color: #fff; border: none; padding: 6px 14px; border-radius: 4px; font-weight: bold; }
+
+    .hero {
+      height: 200px;
+      background: linear-gradient(to top, #141414, transparent), url('https://picsum.photos/800/400') center/cover;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+    }
+    .hero-title { font-size: 20px; font-weight: bold; }
+
+    .section-title { padding: 20px 20px 10px; font-size: 16px; color: #e5e5e5; }
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 0 20px;
+    }
+    .card {
+      background: #2f2f2f;
+      border-radius: 6px;
+      overflow: hidden;
+      aspect-ratio: 2/3;
+      display: flex;
+      align-items: flex-end;
+      padding: 8px;
+      background-size: cover;
+      background-position: center;
+    }
+    .card-title { font-size: 11px; font-weight: bold; background: rgba(0,0,0,0.7); width: 100%; text-align: center; border-radius: 4px; padding: 2px 0; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">PLAYFLIX</div>
+    <button class="btn-login">Masuk</button>
+  </header>
+
+  <div class="hero">
+    <div class="hero-title">Film Populer Minggu Ini</div>
+  </div>
+
+  <div class="section-title">Trending Sekarang</div>
+  <div class="movie-grid">
+    <div class="card" style="background-image: url('https://picsum.photos/200/300?random=1');">
+      <span class="card-title">Action 1</span>
+    </div>
+    <div class="card" style="background-image: url('https://picsum.photos/200/300?random=2');">
+      <span class="card-title">Drama 2</span>
+    </div>
+    <div class="card" style="background-image: url('https://picsum.photos/200/300?random=3');">
+      <span class="card-title">Sci-Fi 3</span>
+    </div>
+  </div>
+
+</body>
+</html>
